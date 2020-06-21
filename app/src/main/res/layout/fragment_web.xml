@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_height="match_parent"
+    tools:context=".webFragment"
+    android:background="@color/whitecolor">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <ImageView
+
+        android:background="@drawable/songheader"
+        android:id="@+id/songheaderimage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+        <TextView
+            android:layout_below="@+id/songheaderimage"
+            android:layout_marginTop="20dp"
+            android:id="@+id/one"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/song1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:textSize="50sp"
+            android:textColor="#FFB382"/>
+
+        <TextView
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:textColor="#FFB382"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:text="Written by : Sudarshan Faakir"/>
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/playwala"
+            android:background="@drawable/bachelor2">
+            <TextView
+                android:id="@+id/song127"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Ncc Song"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/whitecolor"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/play"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ui"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/song127"/>
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_below="@+id/playwala"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/bachelor">
+            <TextView
+                android:id="@+id/song123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Song"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/whitecolor"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/songview"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/vinyl"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/song123"/>
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_below="@+id/playwala"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"/>
+
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_marginBottom="100dp"-->
+<!--            android:scrollbars="none"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_below="@+id/two"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <Button-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:id="@+id/songview"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:text="Song View"-->
+<!--                    android:textColor="#fbfbfb"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_width="220dp"-->
+<!--                    android:background="@drawable/roundedbuttonred"-->
+<!--                    android:layout_height="150dp"/>-->
+<!--                <Button-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:id="@+id/play"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_width="220dp"-->
+<!--                    android:text="Play Song"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:background="@drawable/roundedbutton"-->
+<!--                    android:layout_height="150dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </HorizontalScrollView>-->
+
+
+    </RelativeLayout>
+</ScrollView>

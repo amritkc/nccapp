@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/eScroll"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".Login">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/eLoginprogress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_x="179dp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_y="278dp" />
+    <TextView
+        android:id="@+id/logintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Jai Hind"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/logintext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logintext"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="login to NccStory \n Find Everything about Ncc! "
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+    <EditText
+        android:textColorHint="@color/green"
+        android:layout_below="@+id/logintext2"
+        android:id="@+id/eEmail"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="55dp"
+        android:hint="Email"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/signin"
+        android:layout_height="120dp"/>
+    <EditText
+        android:textColorHint="@color/green"
+        android:layout_marginTop="-35dp"
+        android:layout_below="@+id/eEmail"
+        android:id="@+id/ePassword"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"
+        android:paddingLeft="55dp"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:background="@drawable/password"
+        android:layout_height="120dp"/>
+    <Button
+        android:layout_marginTop="-35dp"
+        android:id="@+id/eLogin"
+        android:paddingBottom="10dp"
+        android:textColor="@color/whitecolor"
+        android:text="Login ->"
+        android:background="@drawable/buttonlogin"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_below="@+id/eLogin"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:fontFamily="@font/baloo"
+        android:text="OR"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp" />
+<!-- <Button-->
+<!--     android:background="@drawable/googlebtn"-->
+<!--     android:layout_width="wrap_content"-->
+<!--     android:id="@+id/google_button"-->
+<!--     android:layout_below="@+id/orText"-->
+<!--     android:layout_centerHorizontal="true"-->
+<!--     android:layout_height="match_parent"/>-->
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/eSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/orText"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/signup"
+        android:fontFamily="@font/cantata_one"
+        android:text="Sign Up"
+        android:textColor="@color/whitecolor" />
+
+    <RelativeLayout
+        android:layout_below="@+id/eSignup"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+</RelativeLayout>
+</ScrollView>

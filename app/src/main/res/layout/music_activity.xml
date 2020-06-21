@@ -1,0 +1,105 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/relativeone"
+    tools:context=".MainActivity">
+<!--    <Button-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:id="@+id/youtubehome"-->
+<!--        android:layout_width="230dp"-->
+<!--        android:background="@drawable/roundedbuttonorange"-->
+<!--        android:layout_height="60dp"/>-->
+        <LinearLayout
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_volume"/>
+            <SeekBar
+                android:id="@+id/volumeBar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:progress="50"
+                android:max="100"/>
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_volumeup"/>
+        </LinearLayout>
+
+
+<!--    <ImageView-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="37dp"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:background="@drawable/homelayer"/>-->
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:background="@drawable/imagesncc"
+        android:layout_height="250dp"/>
+
+    <Button
+        android:onClick="playBtnClick"
+        android:layout_marginTop="55dp"
+        android:layout_width="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_play"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/playBtn"
+        android:layout_alignParentBottom="true" />
+
+    <SeekBar
+        android:layout_centerInParent="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/positionBar"
+        android:layout_above="@+id/playBtn" />
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/positionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/elapsedTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:11"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/remainingTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="-1:11"
+            android:layout_marginLeft="300dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+

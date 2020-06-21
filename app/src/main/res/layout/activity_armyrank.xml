@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".armyrank">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/roundedbuttonrank"
+            android:textColor="@color/whitecolor"
+            android:layout_height="50dp"
+            android:textSize="28sp"
+            android:id="@+id/r1"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Senior Under Officer"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/roundedbuttonrank"
+            android:textColor="@color/whitecolor"
+            android:layout_height="50dp"
+            android:textSize="28sp"
+            android:layout_below="@id/r1"
+            android:id="@+id/r2"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Cadet Under Officer"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/roundedbuttonrank"
+            android:textColor="@color/whitecolor"
+            android:layout_height="80dp"
+            android:textSize="28sp"
+            android:layout_below="@id/r2"
+            android:id="@+id/r3"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Company Quarter Master Sergeant" />
+        <com.google.android.gms.ads.AdView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/r3"
+            android:id="@+id/adrankarmy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="@string/rankads" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/roundedbuttonrank"
+            android:textColor="@color/whitecolor"
+            android:layout_height="50dp"
+            android:textSize="28sp"
+            android:layout_below="@id/adrankarmy"
+            android:id="@+id/r4"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Sergeant"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/roundedbuttonrank"
+            android:textColor="@color/whitecolor"
+            android:layout_height="50dp"
+            android:textSize="28sp"
+            android:layout_below="@id/r4"
+            android:id="@+id/r5"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Corporal"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/roundedbuttonrank"
+            android:textColor="@color/whitecolor"
+            android:layout_height="50dp"
+            android:textSize="28sp"
+            android:layout_below="@id/r5"
+            android:id="@+id/r6"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Lance Corporal"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/roundedbuttonrank"
+            android:textColor="@color/whitecolor"
+            android:layout_height="50dp"
+            android:textSize="28sp"
+            android:layout_below="@id/r6"
+            android:id="@+id/r7"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Cadet"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:layout_below="@id/r7"
+            android:id="@+id/r8"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:text="By Official Source"/>
+
+    </RelativeLayout>
+
+</ScrollView>

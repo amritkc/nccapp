@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="nccstory.ml.androidapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:logo="@drawable/storyicon"
+        android:roundIcon="@mipmap/nccicon"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".signup"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".splashscreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".learn"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".airforcerank"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".navyrank"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".armyrank"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".notification"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".aboutapp"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".music_activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".songview"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".armypdf"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".navypdf"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".airforcepdf"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".quizplay"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/App" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8901228422197240~8742386456" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

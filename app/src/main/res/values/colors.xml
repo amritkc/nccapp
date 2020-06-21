@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3498DB</color>
+    <color name="colorPrimaryDark">#3498DB</color>
+    <color name="colorAccent">#F2D81B60</color>
+    <color name="whitecolor">#FFFFFF</color>
+    <color name="wee">#3498DB</color>
+    <color name="title_color">#3498DB</color>
+    <color name="orange">#F0B27A</color>
+    <color name="green">#52BE80</color>
+    <color name="yellow">#F4D03F</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="voilet">#A569BD</color>
+    <color name="red">#E74C3C</color>
+</resources>
